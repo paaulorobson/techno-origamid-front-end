@@ -1,7 +1,11 @@
 <template>
   <div>
-    <h1>Contato</h1>
-    <p>{{ data }}</p>
+    <div v-if="loading">
+      <Loading />
+    </div>
+    <div v-else>
+      <h1>{{ data.id }}</h1>
+    </div>
   </div>
 </template>
 
