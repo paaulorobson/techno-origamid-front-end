@@ -44,5 +44,6 @@ export default {
   background-color: #4b8;
   border-radius: 4px;
   color: #fff;
+  cursor: pointer;
 }
 </style>
