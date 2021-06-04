@@ -2,7 +2,7 @@ export default {
   data() {
     return {
       loading: true,
-      data: Object,
+      data: "",
     };
   },
 
@@ -10,7 +10,7 @@ export default {
     async fetchData(url) {
       try {
         this.loading = true;
-        this.data = null;
+        this.data = "";
         await fetch(`http://localhost:3000${url}`)
           .then((response) => response.json())
           .then((response) => {

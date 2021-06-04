@@ -3,9 +3,11 @@
     <div v-if="loading">
       <Loading />
     </div>
-    <div v-else>
-      <h1>{{ data.id }}</h1>
-    </div>
+    <transition>
+      <div v-if="data">
+        <h1>{{ data.titulo }}</h1>
+      </div>
+    </transition>
   </div>
 </template>
 
